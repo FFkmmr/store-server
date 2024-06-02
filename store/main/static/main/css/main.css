@@ -1,0 +1,78 @@
+body {
+    background: #2c2c2c;
+}
+a {
+    text-decoration: none;
+}
+a:link,
+a:visited {
+    color: rgb(255, 255, 255);
+}
+li:hover,a:hover,a:active {
+    color: #FF4F00;
+    transform: scale(1.05);
+}
+aside .logo img {
+    width: 55px;
+    float: left;
+}
+aside .logo {
+    display: flexbox;
+    font-size: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+
+    top: -15px;
+}
+aside{
+    display: flexbox;
+    position: fixed;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+
+    border-right: 5px solid #4d4d4d;
+}
+aside h3 {
+    color: #ffffff;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 28px;
+}
+aside ul {list-style: none;}
+aside ul li {
+    display: block;
+    margin-top: 20px;
+    transition: transform .3s ease;
+}
+main {
+    margin-left: 25%;
+}
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+main .features h1 { font-size: 50px; }
+main .features p { max-width: 40vw; margin: 20px auto;}
+.news_but {
+    background: purple !important;
+    border-color: #b29cba !important;
+    color: #fff !important;
+}
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}

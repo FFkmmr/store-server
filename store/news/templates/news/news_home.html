@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} 
+    {% if title %}
+        {{ title }}
+    {% else %}
+        News of FineMan
+    {% endif %}
+{% endblock %}
+
+{% block content %} 
+<div style="margin-top: 20px;" class="features">
+    <h1>News of site</h1>
+    {% if news %}
+        {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                    <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Read more</a>
+                    <span>ID: {{ el.id }}</span><br>
+                    <span>Date of article: {{ el.date }}</span> 
+                </div>
+            {% endfor %}
+    {% else %}
+        <p>No news was delivered :/</p>
+    {% endif %}
+</div>
+{% endblock %}

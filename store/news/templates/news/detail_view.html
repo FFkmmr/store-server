@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} News of FineMan {% endblock %}
+
+{% block content %} 
+    <div class="features">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.full_text}}</p>
+        <p>Date of article: {{ article.date }}</p>
+        <span>ID: {{ article.id }}</span>
+        
+    </div>
+{% endblock %}
